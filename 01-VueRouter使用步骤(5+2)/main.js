@@ -12,6 +12,7 @@ import App from './App.vue'
 // 2个核心步骤
 // 1. 建组件(views目录)，配规则
 // 2. 准备导航链接，配置路由出口(匹配的组件展示的位置) 
+
 import Find from './components/Find'
 import My from './components/My'
 import Friend from './components/Friend'
@@ -20,7 +21,7 @@ Vue.use(VueRouter) // 3.安装注册，VueRouter插件初始化
 
 const router = new VueRouter({ // 4.创建路由对象
   // routes 路由规则们
-  // route  一条路由规则 { path: 路径, component: 组件 }
+  // route  一条路由规则 { path: 路径, component: 组件名 }
   routes: [
     { path: '/find', component: Find },
     { path: '/my', component: My },
